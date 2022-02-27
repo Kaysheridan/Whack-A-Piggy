@@ -25,9 +25,33 @@
 -
 
 ## Imagery ## 
-- 
+- I have not 100% settled on the cartoon image i want to use but here is an example 
+- <img width="365" alt="Screenshot 2022-02-27 at 19 03 23" src="https://user-images.githubusercontent.com/95246821/155896115-66bab030-8384-4159-aba3-f88170f3adb4.png">
 
 ## Wire Frame ##
 - This is a very basic wire frame for how I am thinking I want the game to turn out https://balsamiq.cloud/s4oxsno/px38y2x/rB19D
+
+## Features ##
+
+## Tecnoloigies Used ##
+- HTML5 
+- CSS
+- JavaScript 
+
+## Frameworks, libraries and programs used ##
+-
+
+## Testing ##
+- The W3C Markup Validator and W3C CSS Validator Services are going to be used to validate every page of the project to ensure there are no syntax errors in the project.
+
+- JavaScript will be tested with: 
+
+## Further Testing ##
+
+## Development bugs ##
+
+## Deployment ##
+
+## Credits ##
 
 
