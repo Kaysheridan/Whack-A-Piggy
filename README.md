@@ -18,7 +18,7 @@
 
 ## Design ## 
 ### Colour scheme ###
-- The main colours I have picked for the site are #404E5C,(charcole) #FF86C8(persian pink), #FF69EB(shocking pink crayola) and #FFFBFE(snow) I have picked these colours using Cooler and will be importing them from this site. 
+- The main colours I have picked for the site are #404E5C,(charcole) #FF86C8(persian pink), #FF69EB(shocking pink crayola) and #FFFBFE(snow) I have picked these colours using Coolers and will be importing them from this site. 
 - Tese colours work well together and I think they will make the game bright and fun. 
 
 ## Typeography ##
