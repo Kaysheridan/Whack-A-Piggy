@@ -1,3 +1,22 @@
 body {
     background-color: #FF86C8;
 }
+
+#title {
+    text-align: center;
+    font-size: 80px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    height: 606px;
+    width: 606px;
+}
+
+.circle {
+    height: 170px;
+    width: 170px;
+    border: solid black 1px;
+    border-radius: 50%;
+}
