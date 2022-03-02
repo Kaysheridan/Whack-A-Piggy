@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 body {
     background-color: #FF86C8;
+    font-family: "Secular One" , sans-serif;
+    color: #404E5C;
 }
 
 #title {
     text-align: center;
     font-size: 80px;
+    margin: 25px;
+    color: ;
 }
+
+ section {
+    display: flex;
+
+}
+    
 
 .table {
     display: flex;
     flex-wrap: wrap;
     height: 606px;
     width: 606px;
+    border: solid black 1px;
 }
 
 .circle {
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     border: solid black 1px;
     border-radius: 50%;
 }
