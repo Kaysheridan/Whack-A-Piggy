@@ -1,12 +1,30 @@
 // Query and ID selectors to try avoid global scope/
+const mainGame = document.getElementsByClassName("main-game-container");
 const circles = document.querySelectorAll('.circle');
 const piggy = document.querySelector('.piggy');
 let scores = document.getElementById('score');
 let timeRemaining = document.getElementById('time');
 let result = 0; 
 let secondsLeft = 90;
-let timer = null;
+let timer = null; 
 let whackPiggy;
+let zero = countDownTimer();
+
+
+let startGame = () => {
+    circles.forEach((circle) => {
+        circle.addEventListener('click', () => {
+            if(circle.classList.contains("piggy")){
+                incrementScore();
+            }
+            else{
+                console.log("i didnt work");
+            }
+        });
+    });
+}
+
+startGame();
 
 //Timer Function, decrement secondsLeft by 1 second until zero is reached/
 function countDownTimer() {
@@ -22,7 +40,7 @@ function countDownTimer() {
     }, 1000);
 }
 
- let zero = countDownTimer();
+
 
 //function to remove piggy to blank slate and then place the piggy in a random circle/
 function randomCircle() {
@@ -31,9 +49,8 @@ function randomCircle() {
     }) 
 
     let randomCircle = circles[Math.floor(Math.random() * 9)];
-randomCircle.classList.add('piggy');
-
-whackPiggy = randomCircle.id;
+    randomCircle.classList.add('piggy');
+    whackPiggy = randomCircle.id;
 }
 
 //sets timer to move piggy every 600 miliseconds/ 
@@ -45,14 +62,11 @@ placePiggy();
 
 //increment score when piggy is clicked/
 function incrementScore() {
-    circles.addEventListener('click'); 
-    if (circles.id == whackPiggy);
     result += 5;
     scores.innerText = result;
     whackPiggy = null;
 }
 
-incrementScore();
 
 
 
