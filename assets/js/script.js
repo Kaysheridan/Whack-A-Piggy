@@ -1,5 +1,6 @@
 // Query and ID and Element Selectors/
-const mainGame = document.getElementsByClassName("main-game-container");
+const mainGame = document.getElementsByClassName("main-game-container")[0];
+const startContainer = document.getElementsByClassName("start-game-container")[0];
 const circles = document.querySelectorAll('.circle');
 const piggy = document.querySelector('.piggy');
 let scores = document.getElementById('score');
@@ -11,8 +12,14 @@ let whackPiggy;
 let zero = countDownTimer();
 
 
-// Add event listener for clicks on the piggy once the game has started./
+// Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
 let startGame = () => {
+    startContainer.classList.remove("show");
+    startContainer.classList.add("hide");
+    mainGame.classList.add("show");
+    placePiggy();
+
+
     circles.forEach((circle) => {
         circle.addEventListener('click', () => {
             if(circle.classList.contains("piggy")){
@@ -25,7 +32,6 @@ let startGame = () => {
     });
 }
 
-startGame();
 
 //Timer Function, decrement secondsLeft by 1 second until zero is reached/
 function countDownTimer() {
@@ -57,8 +63,6 @@ function randomCircle() {
 function placePiggy() {
     timer = setInterval(randomCircle, 600);
 }
-
-placePiggy();
 
 //increment score when piggy is clicked/
 function incrementScore() {

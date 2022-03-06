@@ -11,17 +11,17 @@
     <title>Whack a Piggy!</title>
 </head>
 <body>
- <div class="overlay"></div>
-    <!--Overall Container-->
-    <div class="overall-container">
-      <!--Start game button, game name and directions container-->
-      <div class="start-container landing-text hide"
-        <h1 id="title"> Whack a Piggy!</h1>
-        <p>Hit as many piggy's as you can before time runs out!</p>
-        <div class="landing-text" onclick="startGame()">Click to Start Game!</div>
-      </div>
-    </div>
-       <section class="game-details">
+
+    <section class="start-game-container show">
+        <h1 class="title">Whack A Piggy!</h1>
+        <div class="game-details-container">
+            <p>Welcome to Whack A Piggy, hit as many piggys before the time runs out.</p>
+            <button class="start-game-button" onclick="startGame()">Start Game</button>
+        <div>
+     </section>
+
+    <section class="main-game-container hide">
+       <div class="game-details-container">
         <div>
          <h2>Your Score:
              <span id="score">0</span>
@@ -35,21 +35,22 @@
          </h2>
          
          </div>
-     </section>
+        </div>
 
-    <div class="table">
-        <div class="circle" id="1"></div>
-        <div class="circle" id="2"></div>
-        <div class="circle" id="3"></div>
-        <div class="circle" id="4"></div>
-        <div class="circle" id="5"></div>
-        <div class="circle" id="6"></div>
-        <div class="circle" id="7"></div>
-        <div class="circle" id="8"></div>
-        <div class="circle" id="9"></div>
+        <div class="table">
+            <div class="circle" id="1"></div>
+            <div class="circle" id="2"></div>
+            <div class="circle" id="3"></div>
+            <div class="circle" id="4"></div>
+            <div class="circle" id="5"></div>
+            <div class="circle" id="6"></div>
+            <div class="circle" id="7"></div>
+            <div class="circle" id="8"></div>
+            <div class="circle" id="9"></div>
+        </div>
+    </section>
 
-    </div>
- </div>
+   
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -6,23 +6,13 @@ body {
     color: #404E5C;
 }
 
-#over-lay {
-    position: fixed;
-    display: none;
-    width: 50%;
-    height: 50%;
-    background-color: rgba(255, 134, 200, .5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#title {
+.title {
     text-align: center;
     font-size: 80px;
     margin: 25px;
 }
 
- .game-details {
+ .game-details-container {
     display: flex;
     justify-content: space-around;
     font-size: 22px;
@@ -47,3 +37,37 @@ body {
 .piggy {
     background-image: url(/assets/images/PiggyPic.png);
 }
+
+.hide {
+    visibility:hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.main-game-container{
+    display: contents;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.start-game-container{
+    position: absolute;
+    z-index: 2;
+
+}
+
+.start-game-button {
+    background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
