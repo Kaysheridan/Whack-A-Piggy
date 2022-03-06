@@ -1,4 +1,4 @@
-// Query and ID selectors to try avoid global scope/
+// Query and ID and Element Selectors/
 const mainGame = document.getElementsByClassName("main-game-container");
 const circles = document.querySelectorAll('.circle');
 const piggy = document.querySelector('.piggy');
@@ -11,6 +11,7 @@ let whackPiggy;
 let zero = countDownTimer();
 
 
+// Add event listener for clicks on the piggy once the game has started./
 let startGame = () => {
     circles.forEach((circle) => {
         circle.addEventListener('click', () => {
@@ -41,8 +42,7 @@ function countDownTimer() {
 }
 
 
-
-//function to remove piggy to blank slate and then place the piggy in a random circle/
+//function to remove piggy to create a blank slate and then place the piggy in a random circle/
 function randomCircle() {
     circles.forEach(circle => {
         circle.classList.remove('piggy');
@@ -55,7 +55,7 @@ function randomCircle() {
 
 //sets timer to move piggy every 600 miliseconds/ 
 function placePiggy() {
-    timer = setInterval(randomCircle, 800);
+    timer = setInterval(randomCircle, 600);
 }
 
 placePiggy();
