@@ -84,3 +84,31 @@ p {
     position: absolute;
     z-index: 3;
 }
+
+#restart-btn {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    border-radius: 50px;
+    margin: auto;
+    color: #FF86C8;
+    background-color: #FFFBFE;
+
+}
+
+#end-game {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 100px;
+    margin: 25px;
+
+}
+
+#final-score {
+    padding-bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+
+}

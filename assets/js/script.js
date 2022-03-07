@@ -47,8 +47,6 @@ function countDownTimer() {
          gameOver();
         }
 
-                
-        
     }, 1000);
 }
 
@@ -81,7 +79,6 @@ function gameOver() {
     mainGame.classList.remove("show")
     mainGame.classList.add("hide");
     endGame.classList.add("show");
-    scores.innerText = result;
     
 }
 
