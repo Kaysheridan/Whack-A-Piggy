@@ -6,10 +6,36 @@ body {
     color: #404E5C;
 }
 
-.title {
+.start-game-container{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+
+}
+
+#title {
+    padding-top: 100px;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     margin: 25px;
+}
+
+p {
+    padding-bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#start-btn {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    border-radius: 50px;
+    margin: auto;
+    color: #FF86C8;
+    background-color: #FFFBFE;
 }
 
  .game-details-container {
@@ -39,7 +65,7 @@ body {
 }
 
 .hide {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .show {
@@ -53,21 +79,8 @@ body {
 
 }
 
-.start-game-container{
+.end-game-container {
+    width: 100%;
     position: absolute;
-    z-index: 2;
-
+    z-index: 3;
 }
-
-.start-game-button {
-    background-color: red; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    border-radius: 50px;
-}
-

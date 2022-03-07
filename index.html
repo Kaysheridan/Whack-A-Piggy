@@ -11,14 +11,20 @@
     <title>Whack a Piggy!</title>
 </head>
 <body>
-
     <section class="start-game-container show">
-        <h1 class="title">Whack A Piggy!</h1>
-        <div class="game-details-container">
+    <div>
+        <h1 id="title">Whack A Piggy!</h1>
             <p>Welcome to Whack A Piggy, hit as many piggys before the time runs out.</p>
-            <button class="start-game-button" onclick="startGame()">Start Game</button>
-        <div>
-     </section>
+            <button  id="start-btn" onclick="startGame()">Start Game</button>
+        
+    </div>
+     
+    </section>
+     <section class="end-game-container hide">
+        <h1>Game Over!</h1>
+        <h2 id="final-score">Your final Score is </h2>
+
+    </section>
 
     <section class="main-game-container hide">
        <div class="game-details-container">
@@ -49,7 +55,6 @@
             <div class="circle" id="9"></div>
         </div>
     </section>
-
    
     <script src="assets/js/script.js"></script>
 </body>

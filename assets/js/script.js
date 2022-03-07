@@ -1,15 +1,17 @@
 // Query and ID and Element Selectors/
 const mainGame = document.getElementsByClassName("main-game-container")[0];
+const endGame = document.getElementsByClassName("end-game-container")[0];
 const startContainer = document.getElementsByClassName("start-game-container")[0];
 const circles = document.querySelectorAll('.circle');
 const piggy = document.querySelector('.piggy');
 let scores = document.getElementById('score');
 let timeRemaining = document.getElementById('time');
 let result = 0; 
-let secondsLeft = 90;
+let secondsLeft = 10;
 let timer = null; 
 let whackPiggy;
 let zero = countDownTimer();
+let finalScore = scores
 
 
 // Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
@@ -42,8 +44,11 @@ function countDownTimer() {
         if (secondsLeft == 0) {
          clearInterval(zero)
          clearInterval(timer);
-         alert('Game over! Your Score is ' + result); 
+         gameOver();
         }
+
+                
+        
     }, 1000);
 }
 
@@ -70,6 +75,17 @@ function incrementScore() {
     scores.innerText = result;
     whackPiggy = null;
 }
+
+function gameOver() {
+    clearInterval(zero);
+    mainGame.classList.remove("show")
+    mainGame.classList.add("hide");
+    endGame.classList.add("show");
+    scores.innerText = result;
+    
+}
+
+
 
 
 

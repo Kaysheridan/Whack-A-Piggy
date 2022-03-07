@@ -49,6 +49,8 @@
 ## Further Testing ##
 
 ## Development bugs ##
+- Issue with getting the count down timer to begin once the start game button has been clicked. (currently working on issue)
+- 
 
 ## Deployment ##
 
