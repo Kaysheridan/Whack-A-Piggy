@@ -7,28 +7,28 @@ const piggy = document.querySelector('.piggy');
 let scores = document.getElementById('score');
 let timeRemaining = document.getElementById('time');
 let result = 0; 
-let secondsLeft = 10;
-let timer = null; 
+let secondsLeft;
 let whackPiggy;
-let zero = countDownTimer();
-let finalScore = scores
+let placePigs;
 
 
 // Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
 let startGame = () => {
+    result = 0;
+    secondsLeft = 10;
     startContainer.classList.remove("show");
     startContainer.classList.add("hide");
     mainGame.classList.add("show");
+    stopCounter = countDownTimer();
+    scores.innerText = result;
     placePiggy();
+}
 
-
+function addEventHandler() {  
     circles.forEach((circle) => {
-        circle.addEventListener('click', () => {
+        circle.addEventListener('click', myClickHandler => {
             if(circle.classList.contains("piggy")){
                 incrementScore();
-            }
-            else{
-                console.log("i didnt work");
             }
         });
     });
@@ -40,13 +40,9 @@ function countDownTimer() {
     return setInterval(() => {
         secondsLeft--;
         timeRemaining.innerText = secondsLeft;
-
         if (secondsLeft == 0) {
-         clearInterval(zero)
-         clearInterval(timer);
-         gameOver();
+            gameOver();
         }
-
     }, 1000);
 }
 
@@ -64,27 +60,39 @@ function randomCircle() {
 
 //sets timer to move piggy every 600 miliseconds/ 
 function placePiggy() {
-    timer = setInterval(randomCircle, 600);
+    placePigs = setInterval(randomCircle, 600);
 }
 
-//increment score when piggy is clicked/
+//increment score by 5 when piggy is clicked/
 function incrementScore() {
     result += 5;
     scores.innerText = result;
-    whackPiggy = null;
+    if (secondsLeft == 0) {
+        gameOver();
+    }
 }
 
+//When the game ends this hides the main-game and shows the end-game with the final score and the restart button
 function gameOver() {
-    clearInterval(zero);
+    clearInterval(stopCounter);
+    clearInterval(placePigs);
+    
     mainGame.classList.remove("show")
     mainGame.classList.add("hide");
     endGame.classList.add("show");
+    scores.innerText = result;
+}
+
+function restartGame() {
+    result = 0;
+    timeRemaining.innerText = 90;
+    startContainer.classList.remove("hide");
+    startContainer.classList.add("show")
+    endGame.classList.remove("show");
+    scores.innerText = result;
+    startGame();
     
 }
 
 
-
-
-
-
-
+addEventHandler();
