@@ -15,7 +15,7 @@ let placePigs;
 // Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
 let startGame = () => {
     result = 0;
-    secondsLeft = 10;
+    secondsLeft = 90;
     startContainer.classList.remove("show");
     startContainer.classList.add("hide");
     mainGame.classList.add("show");
@@ -80,7 +80,7 @@ function gameOver() {
     mainGame.classList.remove("show")
     mainGame.classList.add("hide");
     endGame.classList.add("show");
-    scores.innerText = result;
+    scores.innerHTML = result;
 }
 
 function restartGame() {
@@ -89,7 +89,6 @@ function restartGame() {
     startContainer.classList.remove("hide");
     startContainer.classList.add("show")
     endGame.classList.remove("show");
-    scores.innerText = result;
     startGame();
     
 }
