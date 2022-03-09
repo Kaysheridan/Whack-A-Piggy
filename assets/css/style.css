@@ -61,7 +61,7 @@ p {
 }
 
 .piggy {
-    background-image: url(assets/images/PiggyPic.png);
+    background-image: url(/assets/images/PiggyPic.png);
 }
 
 .hide {
