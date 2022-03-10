@@ -6,7 +6,7 @@
 
 ## Description ##
 ---
-- The aim of this game is to create a simple but fun interactive adtaptation of Whack a Mole. 
+- The aim of this game is to create a simple but fun interactive adaptation of Whack a Mole. 
 - It will have a count down clock with the aim of whacking as many piggies as possible in the time frame, each piggy hit will increase your score by 5 the game ends once the count down timer hits 0. 
 - The game also has a start button and when the game ends has the option to restart the game to play again. 
 - This project will include HTML, CSS and Javascript with the main focus being on using JavaScript to make the game interactive. 
@@ -39,7 +39,7 @@
 - I have picked these colours using Coolers and have imported them from this site. 
 - These colours work well together and I think they will make the game bright and fun. 
 
-## Typeography ##
+## Typography ##
 - The font style I chose is Gloria Hallelujah with a back up of Sans Serif. GH was imported from Google fonts. I choose this style as I felt it kept the game light and fun.
 
 ## Imagery ## 
@@ -83,11 +83,11 @@
 ## Frameworks, libraries and programs used ##
 ---
 - [Google Fonts](https://fonts.google.com/)
-- [slack Overflow](https://stackoverflow.com/)
+- [Stack Overflow](https://stackoverflow.com/)
 - [Coolers](https://coolors.co/)
-- [balsamiq](https://balsamiq.cloud/s4oxsno/projects)
+- [Balsamiq](https://balsamiq.cloud/s4oxsno/projects)
 - [w3Schools](https://www.w3schools.com/css/default.asp)
-- [adobe stock](https://stock.adobe.com/)
+- [Adobe stock](https://stock.adobe.com/)
 
 
 ## Testing ##
@@ -96,15 +96,16 @@
 - Images of the validated HTML and CSS 
 - JavaScript was tested using jshint  
 - A test was also carried out on lighthouse using chrome dev tools screeshot below 
-- <img width="1143" alt="Screenshot 2022-03-10 at 20 38 01" src="https://user-images.githubusercontent.com/95246821/157750530-cfdf67f7-14ca-45ed-ac2f-224c926117bd.png">
+<img width="1143" alt="Screenshot 2022-03-10 at 20 38 01" src="https://user-images.githubusercontent.com/95246821/157750530-cfdf67f7-14ca-45ed-ac2f-224c926117bd.png">
 <img width="1414" alt="Screenshot 2022-03-10 at 20 42 48" src="https://user-images.githubusercontent.com/95246821/157751110-7005975c-acab-4143-890c-cba762e099f6.png">
 <img width="469" alt="Screenshot 2022-03-10 at 21 21 00" src="https://user-images.githubusercontent.com/95246821/157756774-d0d6e7c5-8429-4acd-a6cb-b628de042e5f.png">
 
 ## Further Testing ##
 ---
+- TO NOTE this project is not suited for Firefox and Edge, and may not work correctly on breakpoints not listed below.
 - I carried out testing for this project using mainly chrome dev tools to check and see what devices it is responsive on. This project was built for a laptop originally then tablets, mobiles and then larger screens. While writing the js code I used the console.log to continuiously test my JS. I tested the functionality of the game after each function was add in JS to ensure functionality had not changed. 
 
-- Most testing for the resonsive aspect of the game was done using chrome dev tools, a physical iPhone 11, iPhone XR and a Samsung s21 PC and Ipad. 
+- Most testing for the resonsive aspect of the game was done using chrome dev tools, a physical iPhone 11, iPhone XR and a Samsung s21, Laptop and Ipad. 
 - Dev tools was used to test:
 - iPhone 5/5 SE
 - iPhone 6/7/8
