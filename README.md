@@ -48,7 +48,7 @@
 - This is a very basic wire frame for how the game will look https://balsamiq.cloud/s4oxsno/px38y2x/rB19D
 - The end game wire frame of the game https://balsamiq.cloud/s4oxsno/px38y2x/r9D16
 - screen shots of the game wireframes, the main game wire frame has changed slightly as i have decided to only put the game title on the game start overlay page and have reduced the number of circles to 9. 
-- During the game development I realised the game is a tad bit simple to have a 90 second timer so I have decided to reduce the time to 45 seconds. 
+- During the game development I realised the game is a tad bit simple to have a 90 second timer so I have decided to reduce the time to 30 seconds. 
 -  
 <img width="595" alt="Screenshot 2022-03-09 at 21 01 22" src="https://user-images.githubusercontent.com/95246821/157535928-458456e2-6fb3-40be-a6a6-565bb8a3c3e1.png">
 <img width="683" alt="Screenshot 2022-03-09 at 21 01 59" src="https://user-images.githubusercontent.com/95246821/157535976-ca2416d9-bccc-4eb3-9d15-09f8b383c372.png">
