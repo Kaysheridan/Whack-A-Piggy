@@ -16,7 +16,7 @@ let placePigs;
 // Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
 let startGame = () => {
     result = 0;
-    secondsLeft = 90;
+    secondsLeft = 45;
     startContainer.classList.remove("show");
     startContainer.classList.add("hide");
     mainGame.classList.add("show");
