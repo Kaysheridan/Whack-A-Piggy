@@ -27,7 +27,7 @@ let startGame = () => {
 
 function addEventHandler() {  
     circles.forEach((circle) => {
-        circle.addEventListener('click', myClickHandler => {
+        circle.addEventListener('click', () => {
             if(circle.classList.contains("piggy")){
                 incrementScore();
             }
@@ -91,8 +91,6 @@ function restartGame() {
     startContainer.classList.add("show");
     endGame.classList.remove("show");
     startGame();
-    
 }
-
 
 addEventHandler();
