@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 /* start game styles and main body style */
+html {
+    overflow: hidden;
+}
+
 body {
     background-color: #FF86C8;
     font-family: "Gloria Hallelujah" , sans-serif;
