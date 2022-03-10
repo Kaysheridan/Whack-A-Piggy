@@ -77,10 +77,10 @@
 ## Frameworks, libraries and programs used ##
 ---
 - [Google Fonts](https://fonts.google.com/)
-- [slack Overflow]()
-- [Coolers]()
-- [balsamiq]()
-- [w3Schools]()
+- [slack Overflow](https://stackoverflow.com/)
+- [Coolers](https://coolors.co/)
+- [balsamiq](https://balsamiq.cloud/s4oxsno/projects)
+- [w3Schools](https://www.w3schools.com/css/default.asp)
 - 
 
 
