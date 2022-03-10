@@ -94,9 +94,11 @@
 ---
 - The W3C Markup Validator and W3C CSS Validator Services are going to be used to validate every page of the project to ensure there are no syntax errors in the project.
 - Images of the validated HTML and CSS 
+- JavaScript was tested using jshint  
+- A test was also carried out on lighthouse using chrome dev tools screeshot below 
 - <img width="1143" alt="Screenshot 2022-03-10 at 20 38 01" src="https://user-images.githubusercontent.com/95246821/157750530-cfdf67f7-14ca-45ed-ac2f-224c926117bd.png">
 <img width="1414" alt="Screenshot 2022-03-10 at 20 42 48" src="https://user-images.githubusercontent.com/95246821/157751110-7005975c-acab-4143-890c-cba762e099f6.png">
-- JavaScript was tested using jshint. 
+<img width="469" alt="Screenshot 2022-03-10 at 21 21 00" src="https://user-images.githubusercontent.com/95246821/157756774-d0d6e7c5-8429-4acd-a6cb-b628de042e5f.png">
 
 ## Further Testing ##
 ---
