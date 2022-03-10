@@ -15,7 +15,7 @@
 ## Game Screenshots ## 
 - <img width="1121" alt="Screenshot 2022-03-10 at 21 02 44" src="https://user-images.githubusercontent.com/95246821/157754264-3620a78a-e4c3-41a6-8cc7-87ab8c4e2c99.png">
 - <img width="1218" alt="Screenshot 2022-03-10 at 21 03 06" src="https://user-images.githubusercontent.com/95246821/157754281-50af3e82-34f5-46f3-8aee-daddf0f72866.png">
-- <img width="722" alt="Screenshot 2022-03-10 at 21 03 32" src="https://user-images.githubusercontent.com/95246821/157754297-27146bbb-59e4-4ea3-8ef3-9cc7db527338.png">
+- <img width="1227" alt="Screenshot 2022-03-10 at 23 02 10" src="https://user-images.githubusercontent.com/95246821/157769697-0fe93ff5-135d-4767-bb84-6b1a3200c0ed.png">
 
 ## User Experience ##
 ---
@@ -70,9 +70,10 @@
 - An option for the player to put in a username.
 - A leader board which shows the highest score 
 - A personal leader board for the user to see their own personal highest score 
-- levels which make the piggy move faster and with a bigger amount of circle options.
+- Levels which make the piggy move faster and with a bigger amount of circle options.
 - Audio when the piggy is correctly clicked .
-- an image and audio when an incorrect circle is clicked.
+- An image and audio when an incorrect circle is clicked.
+- Fix known bug listed below with a cannot click funtion 
 
 ## Tecnoloigies Used ##
 ---
@@ -105,7 +106,7 @@
 - TO NOTE this project is not suited for Firefox and Edge, and may not work correctly on breakpoints not listed below.
 - I carried out testing for this project using mainly chrome dev tools to check and see what devices it is responsive on. This project was built for a laptop originally then tablets, mobiles and then larger screens. While writing the js code I used the console.log to continuiously test my JS. I tested the functionality of the game after each function was add in JS to ensure functionality had not changed. 
 
-- Most testing for the resonsive aspect of the game was done using chrome dev tools, a physical iPhone 11, iPhone XR and a Samsung s21, Laptop and Ipad. 
+- Most testing for the resonsive aspect of the game was done using chrome dev tools, a physical iPhone 11, a Samsung s21, Laptop and Ipad. 
 - Dev tools was used to test:
 - iPhone 5/5 SE
 - iPhone 6/7/8
@@ -121,7 +122,10 @@
 ---
 - Issue with getting the count down timer to begin once the start game button has been clicked, this issue has now been resovled I was calling the countDownTimer at the wrong time. 
 - Another development bug I ran into was when I clicked the restart button to call the startGame() function again it would add a new event listener each time which was multiplying the score wit each restart. To fix this I added the eventEventListeners to their own function and called it on page load as the rest of the elements manipulate the DOM to hide and show containers.
-- 
+
+### Known bugs ###
+- A user can double click a piggy to increment their score if they are quick enough, I am aware this bug exists and have tried resolving it by trying to implement a cannot click function but I have not been able to get this to work correctly and I do not have enough time on hand to rectify this bug. 
+
 
 ## Deployment ##
 ---
