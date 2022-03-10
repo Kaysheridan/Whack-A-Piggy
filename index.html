@@ -6,47 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Whack a piggy, pig game made with JavaScript">
     <meta name="keywords" content="CSS, HTML, JavaScript, timed game, whack a piggy game">
-
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    
-
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Whack a Piggy!</title>
 </head>
 <body>
     <section class="start-game-container show">
-    <div>
-        <h1 id="title">Whack A Piggy!</h1>
+        <div>
+            <h1 id="title">Whack A Piggy!</h1>
             <p>Welcome to Whack A Piggy, hit as many piggys as you can before the time runs out.</p>
             <button  id="start-btn" onclick="startGame()">Start Game</button>
-        
-    </div>
-     
+        </div>
     </section>
+
      <section class="end-game-container hide">
         <h1 id="end-game">Game Over!</h1>
         <h2 id="total">Your final Score is <span class="conclusion">0!</span></h2>
         <button  id="restart-btn" onclick="restartGame()">Restart Game!</button>
-
     </section>
 
     <section class="main-game-container hide">
-       <div class="game-details-container">
-        <div>
-         <h2>Your Score:
-             <span id="score">0</span>
-         </h2>
-         
-         </div>
-
-        <div> 
-         <h2>Time Remaining:
-             <span id="time">30</span>
-         </h2>
-         
-         </div>
+        <div class="game-details-container">
+            <div>
+                <h2>Your Score:
+                    <span id="score">0</span>
+                </h2>
+            </div>
+            <div> 
+                <h2>Time Remaining:
+                    <span id="time">30</span>
+                </h2>
+            </div>
         </div>
 
         <div class="table">
@@ -61,7 +52,6 @@
             <div class="circle" id="9"></div>
         </div>
     </section>
-   
     <script src="assets/js/script.js"></script>
 </body>
 </html>
