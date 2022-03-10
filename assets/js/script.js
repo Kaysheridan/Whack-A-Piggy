@@ -6,6 +6,7 @@ const circles = document.querySelectorAll('.circle');
 const piggy = document.querySelector('.piggy');
 let scores = document.getElementById('score');
 let timeRemaining = document.getElementById('time');
+let totals = document.getElementsByClassName("conclusion")[0];
 let result = 0; 
 let secondsLeft;
 let whackPiggy;
@@ -15,7 +16,7 @@ let placePigs;
 // Add event listener for clicks on the piggy once the game has started and classList and add remove for game containers./
 let startGame = () => {
     result = 0;
-    secondsLeft = 90;
+    secondsLeft = 10;
     startContainer.classList.remove("show");
     startContainer.classList.add("hide");
     mainGame.classList.add("show");
@@ -76,11 +77,11 @@ function incrementScore() {
 function gameOver() {
     clearInterval(stopCounter);
     clearInterval(placePigs);
-    
+    scores.innerText = result;
     mainGame.classList.remove("show")
     mainGame.classList.add("hide");
     endGame.classList.add("show");
-    scores.innerHTML = result;
+    totals.innerText = result;
 }
 
 function restartGame() {
