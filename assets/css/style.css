@@ -10,7 +10,6 @@ body {
     width: 100%;
     position: absolute;
     z-index: 2;
-
 }
 
 #title {
@@ -77,7 +76,6 @@ p {
     display: contents;
     position: absolute;
     z-index: 1;
-
 }
 
 /*End game container styles*/
@@ -97,23 +95,19 @@ p {
     border-radius: 50px;
     margin: auto;
     color: #FF86C8;
-    background-color: #FFFBFE;
-
-}
+    background-color: #FFFBFE;}
 
 #end-game {
     text-align: center;
     padding-top: 100px;
     font-size: 100px;
     margin: 25px;
-
 }
 
 #total {
     padding-bottom: 40px;
     font-size: 30px;
     text-align: center;
-
 }
 
 /* Media Queries */
@@ -150,7 +144,6 @@ and (max-height: 1440px) {
         padding: 35px 70px;
         font-size: 30px;
     }
-
 }
 
 /* Medium Screens*/
@@ -186,7 +179,6 @@ and (max-height: 1080px) {
         padding: 15px 32px;
         font-size: 25px;
     }
-
 }
 
 /* Samsung note 20 plus */
@@ -206,14 +198,12 @@ and (max-height: 915px) {
         height: 350px;
         width: 350px;
         padding-left: 12px;
-
     }
 
     .circle {
         height: 102px;
         width: 102px;
         margin: auto;
-        
     }
 
     .piggy {
@@ -227,7 +217,6 @@ and (max-height: 915px) {
     #total {
         font-size: 20px;
     }
-
 }
 
 
@@ -352,14 +341,12 @@ and (max-height: 568px) {
         width: 320px;
         margin: auto;
         padding-right: 10px;
-
     }
 
     .circle {
         height: 102px;
         width: 102px;
         margin: auto;
-        
     }
 
     .piggy {
@@ -377,6 +364,4 @@ and (max-height: 568px) {
     #total {
         font-size: 20px;
     }
-
-
 }
