@@ -154,7 +154,7 @@ and (max-height: 1440px) {
 }
 
 /* Medium Screens*/
-@media only screen 
+@media screen 
 and (max-width: 1920px) 
 and (max-height: 1080px) {
     #title {
@@ -189,14 +189,52 @@ and (max-height: 1080px) {
 
 }
 
+/* Samsung note 20 plus */
+@media only screen 
+and (max-width: 412px) 
+and (max-height: 915px) {
+    #title {
+        font-size: 50px;
+    }
+
+    .game-details-container {
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .table {
+        height: 350px;
+        width: 350px;
+        padding-left: 12px;
+
+    }
+
+    .circle {
+        height: 102px;
+        width: 102px;
+        margin: auto;
+        
+    }
+
+    .piggy {
+        background-image: url(../images/PiggyPic\ for\ media\ queries.png);
+    }
+
+    #end-game {
+        font-size: 40px;
+    }
+
+    #total {
+        font-size: 20px;
+    }
+
+}
+
+
 /* Iphone 6/7/8 plus*/
 @media only screen 
 and (max-width: 414px) 
 and (max-height: 736px) {
-    .start-game-container {
-        
-    
-    }
     #title {
         font-size: 50px;
     }

@@ -61,7 +61,7 @@ function randomCircle() {
 
 //sets timer to move piggy every 600 miliseconds/ 
 function placePiggy() {
-    placePigs = setInterval(randomCircle, 600);
+    placePigs = setInterval(randomCircle, 500);
 }
 
 //increment score by 5 when piggy is clicked/
