@@ -12,6 +12,11 @@
 - This project will include HTML, CSS and Javascript with the main focus being on using JavaScript to make the game interactive. 
 - Target audience for this game is for people looking for a light and fun game which tests reflexes on how fast you can correctly click a piggy.
 
+## Game Screenshots ## 
+- <img width="1121" alt="Screenshot 2022-03-10 at 21 02 44" src="https://user-images.githubusercontent.com/95246821/157754264-3620a78a-e4c3-41a6-8cc7-87ab8c4e2c99.png">
+- <img width="1218" alt="Screenshot 2022-03-10 at 21 03 06" src="https://user-images.githubusercontent.com/95246821/157754281-50af3e82-34f5-46f3-8aee-daddf0f72866.png">
+- <img width="722" alt="Screenshot 2022-03-10 at 21 03 32" src="https://user-images.githubusercontent.com/95246821/157754297-27146bbb-59e4-4ea3-8ef3-9cc7db527338.png">
+
 ## User Experience ##
 ---
 ### As a site owner ####
@@ -40,7 +45,6 @@
 ## Imagery ## 
 - The images have been take from adobe stock as I have an account with them.
 - <img width="365" alt="Screenshot 2022-02-27 at 19 03 23" src="https://user-images.githubusercontent.com/95246821/155896115-66bab030-8384-4159-aba3-f88170f3adb4.png">
-- 
 
 ## Wire Frame ##
 ---
@@ -56,7 +60,7 @@
 
 ## Features developed ##
 ---
-- A timer which allowes the user 90 seconds before the game ends. 
+- A timer which allowes the user 30 seconds before the game ends. 
 - A random moving image that the user must try click in time to increment their score.
 - A score counter which allows the user to see their score. 
 - A start game button which begins the game once clicked. 
@@ -67,6 +71,8 @@
 - A leader board which shows the highest score 
 - A personal leader board for the user to see their own personal highest score 
 - levels which make the piggy move faster and with a bigger amount of circle options.
+- Audio when the piggy is correctly clicked .
+- an image and audio when an incorrect circle is clicked.
 
 ## Tecnoloigies Used ##
 ---
@@ -81,25 +87,38 @@
 - [Coolers](https://coolors.co/)
 - [balsamiq](https://balsamiq.cloud/s4oxsno/projects)
 - [w3Schools](https://www.w3schools.com/css/default.asp)
-- 
+- [adobe stock](https://stock.adobe.com/)
 
 
 ## Testing ##
 ---
 - The W3C Markup Validator and W3C CSS Validator Services are going to be used to validate every page of the project to ensure there are no syntax errors in the project.
-
-- JavaScript will be tested with: 
+- Images of the validated HTML and CSS 
+- <img width="1143" alt="Screenshot 2022-03-10 at 20 38 01" src="https://user-images.githubusercontent.com/95246821/157750530-cfdf67f7-14ca-45ed-ac2f-224c926117bd.png">
+<img width="1414" alt="Screenshot 2022-03-10 at 20 42 48" src="https://user-images.githubusercontent.com/95246821/157751110-7005975c-acab-4143-890c-cba762e099f6.png">
+- JavaScript was tested using jshint. 
 
 ## Further Testing ##
 ---
 - I carried out testing for this project using mainly chrome dev tools to check and see what devices it is responsive on. This project was built for a laptop originally then tablets, mobiles and then larger screens. While writing the js code I used the console.log to continuiously test my JS. I tested the functionality of the game after each function was add in JS to ensure functionality had not changed. 
 
-- All testing for the resonsive aspect of the game was done using chrome dev tools, 
+- Most testing for the resonsive aspect of the game was done using chrome dev tools, a physical iPhone 11, iPhone XR and a Samsung s21 PC and Ipad. 
+- Dev tools was used to test:
+- iPhone 5/5 SE
+- iPhone 6/7/8
+- iPhone 6/7/8 plus 
+- iPhone X
+- Ipad 
+- Ipad pro
+- Small laptop (1280 x 802)
+- 24 inch screen (1920 x 1080)
+- 1440p screen (2560 x 1440)
 
 ## Development bugs ##
 ---
 - Issue with getting the count down timer to begin once the start game button has been clicked, this issue has now been resovled I was calling the countDownTimer at the wrong time. 
 - Another development bug I ran into was when I clicked the restart button to call the startGame() function again it would add a new event listener each time which was multiplying the score wit each restart. To fix this I added the eventEventListeners to their own function and called it on page load as the rest of the elements manipulate the DOM to hide and show containers.
+- 
 
 ## Deployment ##
 ---

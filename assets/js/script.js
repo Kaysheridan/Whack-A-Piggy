@@ -23,7 +23,7 @@ let startGame = () => {
     stopCounter = countDownTimer();
     scores.innerText = result;
     placePiggy();
-}
+};
 
 function addEventHandler() {  
     circles.forEach((circle) => {
@@ -52,16 +52,16 @@ function countDownTimer() {
 function randomCircle() {
     circles.forEach(circle => {
         circle.classList.remove('piggy');
-    }) 
+    });
 
     let randomCircle = circles[Math.floor(Math.random() * 9)];
     randomCircle.classList.add('piggy');
     whackPiggy = randomCircle.id;
 }
 
-//sets timer to move piggy every 600 miliseconds/ 
+//sets timer to move piggy every 500 miliseconds/ 
 function placePiggy() {
-    placePigs = setInterval(randomCircle, 900);
+    placePigs = setInterval(randomCircle, 500);
 }
 
 //increment score by 5 when piggy is clicked/
@@ -78,7 +78,7 @@ function gameOver() {
     clearInterval(stopCounter);
     clearInterval(placePigs);
     scores.innerText = result;
-    mainGame.classList.remove("show")
+    mainGame.classList.remove("show");
     mainGame.classList.add("hide");
     endGame.classList.add("show");
     totals.innerText = result;
@@ -86,9 +86,9 @@ function gameOver() {
 
 function restartGame() {
     result = 0;
-    timeRemaining.innerText = 90;
+    timeRemaining.innerText = 30;
     startContainer.classList.remove("hide");
-    startContainer.classList.add("show")
+    startContainer.classList.add("show");
     endGame.classList.remove("show");
     startGame();
     
