@@ -85,7 +85,6 @@ p {
 }
 
 /*End game container styles*/
-
 .end-game-container {
     width: 100%;
     position: absolute;
@@ -231,7 +230,7 @@ and (max-height: 736px) {
     .circle {
         height: 102px;
         width: 102px;
-        margin: auto;
+        margin: auto
         
     }
 
