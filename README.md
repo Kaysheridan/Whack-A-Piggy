@@ -9,12 +9,15 @@
 - The aim of this game is to create a simple but fun interactive adaptation of Whack a Mole. 
 - It will have a count down clock with the aim of whacking as many piggies as possible in the time frame, each piggy hit will increase your score by 5 the game ends once the count down timer hits 0. 
 - The game also has a start button and when the game ends has the option to restart the game to play again. 
+- I feel the game doesnt need a lot of explanation so the start game has one line of instructions with the title of the game and the start button. 
+- The main game starts as soon as you click start with the piggy moving randomly and the timer counting down in 1 second increment from 30 until 0. 
+- The end game page shows once the count down reaches 0 and shows you your final score and gives the option to restart the game with a button.
 - This project will include HTML, CSS and Javascript with the main focus being on using JavaScript to make the game interactive. 
-- Target audience for this game is for people looking for a light and fun game which tests reflexes on how fast you can correctly click a piggy.
+- Target audience for this game is for people looking for a light and fun game which tests reflexes on how fast you can react to catch a moving object.
 
 ## Game Screenshots ## 
 - <img width="1121" alt="Screenshot 2022-03-10 at 21 02 44" src="https://user-images.githubusercontent.com/95246821/157754264-3620a78a-e4c3-41a6-8cc7-87ab8c4e2c99.png">
-- <img width="1218" alt="Screenshot 2022-03-10 at 21 03 06" src="https://user-images.githubusercontent.com/95246821/157754281-50af3e82-34f5-46f3-8aee-daddf0f72866.png">
+- <img width="1194" alt="Screenshot 2022-03-11 at 10 36 52" src="https://user-images.githubusercontent.com/95246821/157851338-f2014912-00e7-49a7-80a1-be7e909028a3.png">
 - <img width="1227" alt="Screenshot 2022-03-10 at 23 02 10" src="https://user-images.githubusercontent.com/95246821/157769697-0fe93ff5-135d-4767-bb84-6b1a3200c0ed.png">
 
 ## User Experience ##
@@ -43,7 +46,7 @@
 - The font style I chose is Gloria Hallelujah with a back up of Sans Serif. GH was imported from Google fonts. I choose this style as I felt it kept the game light and fun.
 
 ## Imagery ## 
-- The images have been take from adobe stock as I have an account with them.
+- The images have been taken from adobe stock as I have an account with them.
 - <img width="365" alt="Screenshot 2022-02-27 at 19 03 23" src="https://user-images.githubusercontent.com/95246821/155896115-66bab030-8384-4159-aba3-f88170f3adb4.png">
 
 ## Wire Frame ##
@@ -89,7 +92,10 @@
 - [Balsamiq](https://balsamiq.cloud/s4oxsno/projects)
 - [w3Schools](https://www.w3schools.com/css/default.asp)
 - [Adobe stock](https://stock.adobe.com/)
-
+- [Youtube](https://www.youtube.com/)
+- [Github](https://github.com/Kaysheridan)
+- [Gitpod](https://www.gitpod.io/)
+- [Favicon](https://realfavicongenerator.net/)
 
 ## Testing ##
 ---
@@ -126,11 +132,13 @@
 ### Known bugs ###
 - A user can double click a piggy to increment their score if they are quick enough, I am aware this bug exists and have tried resolving it by trying to implement a cannot click function but I have not been able to get this to work correctly and I do not have enough time on hand to rectify this bug. 
 
+## Mentor Feedback ##
+- My mentor advised it would look better to change the backgroud of the circles and not to leave them plain so I have implemented this by using an inset shadowbox in the background. 
+- Also advised that the responsive aspect could be better which I am aware of, as I was running out of time to get the entire project finished I have tested the responsive aspect on the devices listed in the testing section of this readMe
 
-## Deployment ##
+## Acknowledgements ##
 ---
-
-## Credits ##
----
+I would like to credit my mentor Narender for his support during the development of my project. 
+This project is for educational purposes only. It was created as a second milestone project for Code Institutes full stack web development course.
 
 
