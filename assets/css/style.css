@@ -63,6 +63,7 @@ p {
     width: 200px;
     border: solid #404E5C 1px;
     border-radius: 50%;
+    box-shadow: 10px 10px 5px #FFFBFE inset;
 }
 
 .piggy {
